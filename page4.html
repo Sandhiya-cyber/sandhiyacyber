@@ -1,0 +1,555 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="All tags">
+    <title> Find My Partner</title>
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="sandhiya.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html,body{
+            overflow-x:hidden ;
+        }
+       .mail{
+            padding: 20px;
+        }
+        .logoimg {
+            position: relative;
+            bottom: 150px;
+            left: 10px;
+        }
+        .lona{
+            position: relative;
+            bottom: 380px;
+            left: 175px;
+            font-size: 50px;
+        }
+        button {
+            border-color: black;
+            background-color: rgb(200, 24, 83);
+            width: 40%}
+        .loim{
+            position: relative;
+            bottom: 225px;
+        }
+        tr{
+            padding-left: 15px;
+            display: inline;
+            position: relative;
+            bottom: 30px;
+        }
+        form{
+            background-color: rgba(0, 0, 0, 0.278);
+            position: relative;
+            bottom: 85px;
+            left: 175px;
+            height: 100px;
+            border-radius: 8px;
+            width: 76%;
+            color: white;
+        }
+        input[type="search"]{
+            width: 60%;
+            padding: 6.5px;
+            margin: 4px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+        }
+        input, select{
+            position: relative;
+            z-index: 10; 
+        }
+        .agebox{
+            position: relative;
+            right: 25px;
+            top: 10px;
+        }
+        .age{
+            position: relative;
+            bottom: 30px;
+            left: 30px;
+        }
+        .to{
+            position: relative;
+            right: 60px;
+            top: 10px;
+        }
+        nav{
+            position: relative;
+            z-index: 1000;
+        }
+        .nbrel{
+            position:relative;
+            right: 85px;
+            bottom: 32px;
+        }
+        .breligion{
+            width: 80%;
+            padding: 6.5px;
+            margin: 4px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .tongue{
+            position: relative;
+            right: 100px;
+        }
+        .btongue{
+            width: 60%;
+            padding: 6.5px;
+            margin: 4px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .fa-user{
+            position: relative;
+            bottom: 100px;
+            left: 40px;
+        }
+        .pro{position: relative;
+            font-size: 30px;
+            top: 150px; 
+            left: 20px;
+         }
+        .profile{
+            position: relative;
+            font-size: 25px;
+            top: 30px;   
+            left: 40px;
+        }
+        button{
+            position: relative;
+            left: 80%;
+            top: 35px;
+            width: 13%;
+            padding: 6.5px;
+            margin: 4px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .bname{
+            font-size: 20px;
+            color: white;
+        }
+        .profile-section{
+            background-color:rgb(255, 255, 255) ;
+            position: relative;
+            bottom: 475px;
+            right: 50px;
+            width: 2500px; 
+        }
+        img{
+            width: 200px;
+            height: 250px;
+        }
+        .pic{
+            position: relative;
+            left: 30px;
+            top: 20px;
+        }
+        .personinfo{
+            position: relative;
+            left: 225px;
+            bottom: 220px;
+            font-size: 22px;
+        }
+        .ljs{
+            position: relative;
+            left: 480px;
+            bottom: 500px;
+        }
+        .cha{
+            position: relative;
+            left: 480px;
+            bottom: 500px;
+        }
+        .atha{
+            position: relative;
+            right: 1020px;
+            bottom: 200px;
+        }
+        .allu{
+            position: relative;
+            left: 480px;
+            bottom: 500px;
+        }
+        .vijay{
+            position: relative;
+            left: 480px;
+            bottom: 500px;
+        }
+        .song{
+            position: relative;
+            right: 1020px;
+            bottom: 200px;
+        }
+        .simbu{
+            position: relative;
+            left: 480px;
+            bottom: 500px;
+        }
+        .vishal{
+            position: relative;
+            left: 480px;
+            bottom: 500px;
+        }
+        .pra{
+            position: relative;
+            right: 1020px;
+            bottom: 200px;
+        }
+        .park{
+            position: relative;
+            left: 480px;
+            bottom: 500px;
+        }
+        .lee{
+            position: relative;
+            left: 480px;
+            bottom: 500px; 
+        }
+        .andres{
+            position: relative;
+            right: 1020px;
+            bottom: 200px;
+        }
+        .rabin{
+            position: relative;
+            left: 480px;
+            bottom: 500px;
+        }
+        .bright{
+            position: relative;
+            left: 480px;
+            bottom: 500px; 
+        }
+        .salman{
+            position: relative;
+            right: 1020px;
+            bottom: 200px;
+            height: 20px;
+        }
+        .kartik{
+            position: relative;
+            left: 480px;
+            bottom: 500px;
+        }
+        .ishann{
+            position: relative;
+            left: 480px;
+            bottom: 500px; 
+        }
+        button{
+            z-index: 10px;
+            position: relative;
+        }
+        .personinfo{
+            width: 13%;
+            height: 1200%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="contact">
+        <span><i class="fa-solid fa-phone"></i> 044-2348905670</span>
+        <span class="mail"><i class="fa-solid fa-envelope"></i> fmpartner@yahoo.com</span>
+    </div>
+    <div>
+        <nav>
+            <ol>
+                <li><a href="file:///C:/Users/Hp/Desktop/find%20my%20partner%20pro/sandhiya.html?name=&email=&password=&confirm+password=&contact+no=&otp=#" class="navbread">Home</a></li>
+                <li><a href="about.html" class="navbread">About Us </a></li>
+                <li><a href="service.html" class="navbread">Service</a> </li>
+                <li><a href="#" class="navbread">Testimonials </a> </li>
+                <li><a href="help.html" class="navbread"><i class="fas fa-question-circle"></i>Help</a></li>
+            </ol>
+        </nav>
+    </div></header>
+    <P class="pro"><i class="fa-duotone fa-solid fa-user"></i></P>
+    <p class="profile"></i>Profile</p>
+    <div class="fullform">    
+        <form>
+            <table>
+              <tr>
+                    <td><label for="age" class="age">Age</label></td>
+                    <td> <input type="search" id="age" class="agebox" required> </td> 
+                    <td> <label for="to" class="to">to</label></td> 
+                    <td> <input type="search" id="age" class="to"></td>
+                </tr>
+                <tr class="nbrel">
+                    <td><label for="religion" class="nreligion">Religion</label>
+                        <select id="religion"  class="breligion">
+                          <option>---Select---</option>
+                          <option>Christian</option>
+                          <option>Muslim</option>
+                          <option>Hindu</option>
+                          <option>Buddhist</option>
+                          <option>Islam</option>
+                          <option>Folk/Traditional </option>
+                          <option>Sikhism</option>
+                          <option>Judaism</option>
+                          <option>Jainism</option>
+                          <option>Bahá'í Faith</option>
+                          <option>Shinto</option>
+                          <option>Taoism</option>
+                          <option>Zoroastrianism</option>
+                          <option>Rastafarianism</option>
+                          <option>Other</option>
+                        </select></td>
+                </tr>
+                <tr class="tongue">
+                    <td><label for="tongue" class="ntongue">Mother Tongue</label>
+                        <select id="religion"  class="btongue">
+                          <option>---Select---</option>
+                          <option>Tamil</option>
+                          <option>English</option>
+                          <option>Hindi</option>
+                          <option>Telugu</option>
+                          <option>Mandarin</option>
+                          <option>Spanish</option>
+                          <option>French</option>
+                          <option>Korean</option>
+                          <option>Arabic</option>
+                          <option>Bengali</option>
+                          <option>Russian</option>
+                          <option>Portuguese</option>
+                          <option>Japanese</option>
+                          <option>Urdu</option>
+                          <option>Indonesian</option>
+                          <option>Yue Chinese (Cantonese)</option>
+                          <option>Chinese</option>
+                          <option>Other</option>
+                        </select></td>
+                </tr>
+                <tr>
+                <button type="button" class="next"><em class="bname">Let's Begin</em></button></tr>
+    </table>
+</form></div>
+<div class="loim">
+    <img src="logo_crop-removebg-preview.png" alt="Web logo"width="200px" class="logoimg">
+    <p class="lona"><em>Find My Partner</em></p></div>
+    </div>
+    <div class="profile-section">
+        <div class="profile-card">
+            <img src="harsha.jpg" alt="" class="pic">
+            <div class="personinfo">
+                <strong>Name:</strong> Harhshavardhan V<br>
+                <strong>Age:</strong> 28<br>
+                <strong>Religion:</strong> Hindu<br>
+                <strong>Mother Tongue:</strong> Tamil<br>
+                <strong>Education:</strong> B.Tech<br>
+                <strong>City:</strong> Chennai<br>
+                <strong>State:</strong> Tamilnadu<br>
+                <p>For More Details<a href="#">Click Here</a></p>
+            </div>
+            <div class="ljs">
+                <img src="lee jong suk.jpg" alt="" class="pic">
+                <div class="personinfo">
+                    <strong>Name:</strong> Lee Jong Suk<br>
+                    <strong>Age:</strong> 30<br>
+                    <strong>Religion:</strong> Christian<br>
+                    <strong>Mother Tongue:</strong> Korean<br>
+                    <strong>Education:</strong> B.A<br>
+                    <strong>City:</strong> Yongin<br>
+                    <strong>State:</strong> Gyeonggi Pro.<br>
+                    <p>For More Details<a href="#">Click Here</a></p>
+                </div>
+            <div class="cha">
+                <img src="cha eun.jpg" alt="" class="pic">
+                <div class="personinfo">
+                    <strong>Name:</strong> Cha Eun Woo<br>
+                    <strong>Age:</strong> 28<br>
+                    <strong>Religion:</strong> Christian<br>
+                    <strong>Mother Tongue:</strong> Korean<br>
+                    <strong>Education:</strong> B.A<br>
+                    <strong>City:</strong> Gunpo<br>
+                    <strong>State:</strong> Gyeonggi Pro.<br>
+                    <p>For More Details<a href="#">Click Here</a></p>
+                </div>
+                <div class="atha">
+                    <img src="atharvaa1.jpg" alt="" class="pic">
+                    <div class="personinfo">
+                        <strong>Name:</strong> Atharvaa M<br>
+                        <strong>Age:</strong> 27<br>
+                        <strong>Religion:</strong> Hindu<br>
+                        <strong>Mother Tongue:</strong> Tamil<br>
+                        <strong>Education:</strong> B.Sc<br>
+                        <strong>City:</strong> Chennai<br>
+                        <strong>State:</strong> Tamilnadu<br>                           
+                        <p>For More Details<a href="#">Click Here</a></p>
+                    </div>
+                <div class="allu">
+                    <img src="allu.jpg" alt="" class="pic">
+                    <div class="personinfo">
+                        <strong>Name:</strong> Allu Sirish<br>
+                        <strong>Age:</strong> 28<br>                                
+                        <strong>Religion:</strong> Hindu<br>
+                        <strong>Mother Tongue:</strong> Telugu<br>
+                        <strong>Education:</strong> B.Com<br>
+                        <strong>City:</strong> Hyderabad<br>
+                        <strong>State:</strong> Telangana<br>
+                        <p>For More Details<a href="#">Click Here</a></p>
+                        </div>
+                 <div class="vijay">
+                    <img src="vijay.jpg" alt="" class="pic">
+                    <div class="personinfo">
+                        <strong>Name:</strong> Vijay Deverakonda<br>
+                        <strong>Age:</strong> 32<br>
+                        <strong>Religion:</strong> Hindu<br>
+                        <strong>Mother Tongue:</strong> Telugu<br>
+                        <strong>Education:</strong> B.Com<br>
+                        <strong>City:</strong> Hyderabad<br>
+                        <strong>State:</strong>Telangana<br>
+                        <p>For More Details<a href="#">Click Here</a></p>
+                </div>
+                <div class="song">
+                    <img src="song kang.jpg" alt="" class="pic">
+                    <div class="personinfo">
+                        <strong>Name:</strong> Song Kang<br>
+                        <strong>Age:</strong> 26<br>
+                        <strong>Religion:</strong> Christian<br>
+                        <strong>Mother Tongue:</strong> Korean<br>
+                        <strong>Education:</strong> B.F.A<br>
+                        <strong>City:</strong> Seoul<br>
+                        <strong>State:</strong>other<br>
+                        <p>For More Details<a href="#">Click Here</a></p>
+                </div>
+                <div class="simbu">
+                    <img src="simbu.jpg" alt="" class="pic">
+                    <div class="personinfo">
+                        <strong>Name:</strong> Simbu T R<br>
+                        <strong>Age:</strong> 39<br>
+                        <strong>Religion:</strong> Hindu<br>
+                        <strong>Mother Tongue:</strong> Tamil<br>
+                        <strong>Education:</strong> B.Sc<br>
+                        <strong>City:</strong> Chennai<br>
+                        <strong>State:</strong>Tamilnadu<br>
+                        <p>For More Details<a href="#">Click Here</a></p>
+                </div> 
+                <div class="vishal">
+                    <img src="vishal.jpg".jpg alt="" class="pic">
+                    <div class="personinfo">
+                        <strong>Name:</strong> Vishal K R<br>
+                        <strong>Age:</strong> 35<br>
+                        <strong>Religion:</strong> Hindu<br>
+                        <strong>Mother Tongue:</strong> Telugu<br>
+                        <strong>Education:</strong> B.A.Com<br>
+                        <strong>City:</strong> Chennai<br>
+                        <strong>State:</strong>Tamilnadu<br>
+                        <p>For More Details<a href="#">Click Here</a></p>
+                </div> 
+                <div class="pra">
+                    <img src="prabhas.jpg".jpg alt="" class="pic">
+                    <div class="personinfo">
+                        <strong>Name:</strong> Prabhas R U<br>
+                        <strong>Age:</strong> 30<br>
+                        <strong>Religion:</strong> Hindu<br>
+                        <strong>Mother Tongue:</strong> Telugu<br>
+                        <strong>Education:</strong> B.Tech<br>
+                        <strong>City:</strong> Hydrebad<br>
+                        <strong>State:</strong>Telangana<br>
+                        <p>For More Details<a href="#">Click Here</a></p>
+                </div> 
+                <div class="park">
+                    <img src="park.jpg".jpg alt="" class="pic">
+                    <div class="personinfo">
+                        <strong>Name:</strong> Park Seo Joon<br>
+                        <strong>Age:</strong> 30<br>
+                        <strong>Religion:</strong> Christian<br>
+                        <strong>Mother Tongue:</strong> Korean<br>
+                        <strong>Education:</strong> B.Com<br>
+                        <strong>City:</strong> Seoul<br>
+                        <strong>State:</strong>Other<br>
+                        <p>For More Details<a href="#">Click Here</a></p>
+                </div> 
+                <div class="lee">
+                    <img src="lee min ho.jpg".jpg alt="" class="pic">
+                    <div class="personinfo">
+                        <strong>Name:</strong> Lee Min Ho<br>
+                        <strong>Age:</strong> 29<br>
+                        <strong>Religion:</strong> Christian<br>
+                        <strong>Mother Tongue:</strong> Korean<br>
+                        <strong>Education:</strong> B.A<br>
+                        <strong>City:</strong> Seoul<br>
+                        <strong>State:</strong>Other<br>
+                        <p>For More Details<a href="#">Click Here</a></p>
+                </div> 
+                <div class="andres">
+                    <img src="andres.jpg".jpg alt="" class="pic">
+                    <div class="personinfo">
+                        <strong>Name:</strong> Andres Muhlach<br>
+                        <strong>Age:</strong> 24<br>
+                        <strong>Religion:</strong> Roman Catholic<br>
+                        <strong>Mother Tongue:</strong> Filipino<br>
+                        <strong>Education:</strong> High School<br>
+                        <strong>City:</strong> Manila<br>
+                        <strong>State:</strong>Metro Manila<br>
+                        <p>For More Details<a href="#">Click Here</a></p>
+                </div> 
+                <div class="rabin">
+                    <img src="rabin.jpg".jpg alt="" class="pic">
+                    <div class="personinfo">
+                        <strong>Name:</strong> Rabin Angeles<br>
+                        <strong>Age:</strong> 20<br>
+                        <strong>Religion:</strong> Roman Catholic<br>
+                        <strong>Mother Tongue:</strong> Filipino<br>
+                        <strong>Education:</strong> High School<br>
+                        <strong>City:</strong> Manila<br>
+                        <strong>State:</strong>Metro Manila<br>
+                        <p>For More Details<a href="#">Click Here</a></p>
+                </div> 
+                <div class="bright">
+                    <img src="bright.jpg".jpg alt="" class="pic">
+                    <div class="personinfo">
+                        <strong>Name:</strong> Bright Vachirawit<br>
+                        <strong>Age:</strong> 27<br>
+                        <strong>Religion:</strong> Buddhism<br>
+                        <strong>Mother Tongue:</strong> Thai<br>
+                        <strong>Education:</strong> FFAA<br>
+                        <strong>City:</strong> Bangkok<br>
+                        <strong>State:</strong> Bangkok Metropolis<br>
+                        <p>For More Details<a href="#">Click Here</a></p>
+                </div> 
+                <div class="salman">
+                    <img src="salman.jpg".jpg alt="" class="pic">
+                    <div class="personinfo">
+                        <strong>Name:</strong> Salman Khan<br>
+                        <strong>Age:</strong> 50<br>
+                        <strong>Religion:</strong> Muslim<br>
+                        <strong>Mother Tongue:</strong> Hindi<br>
+                        <strong>Education:</strong> B.Com<br>
+                        <strong>City:</strong> Mumbai<br>
+                        <strong>State:</strong> Maharashtra<br>
+                        <p>For More Details<a href="#">Click Here</a></p>
+                </div>
+                <div class="kartik">
+                    <img src="karthik.jpg".jpg alt="" class="pic">
+                    <div class="personinfo">
+                        <strong>Name:</strong> Kartik Aaryan<br>
+                        <strong>Age:</strong> 30<br>
+                        <strong>Religion:</strong> Hindu<br>
+                        <strong>Mother Tongue:</strong> Hindi<br>
+                        <strong>Education:</strong> B.E<br>
+                        <strong>City:</strong> Gwalior<br>
+                        <strong>State:</strong> Madhya Pradesh<br>
+                        <p>For More Details<a href="#">Click Here</a></p>
+                </div>
+                <div class="ishann">
+                    <img src="is.jpg".jpg alt="" class="pic">
+                    <div class="personinfo">
+                        <strong>Name:</strong> Ishaan Khatter<br>
+                        <strong>Age:</strong> 29<br>
+                        <strong>Religion:</strong> Hindu<br>
+                        <strong>Mother Tongue:</strong> Hindi<br>
+                        <strong>Education:</strong> High School<br>
+                        <strong>City:</strong> Mumbai<br>
+                        <strong>State:</strong> Maharashtra<br>
+                        <p>For More Details<a href="#">Click Here</a></p>
+                </div>
+        </div>
+</body>
+</html>

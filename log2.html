@@ -1,0 +1,407 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="All tags">
+    <title> Find My Partner</title>
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="sandhiya.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html, body{
+    overflow: hidden;
+}
+         .mail{
+            padding: 20px;
+        }
+        ul {
+            position: static;
+        }
+        form {
+            position: relative;
+            left: 380px;
+            bottom: 350px;
+        }
+        tr{
+            position: relative;
+            bottom: 20px;
+        }
+        .bname{
+            color: white;
+            font-family:  georgia;
+        }
+        .botp{
+            font-size: 15px; 
+            border-radius: 9px; 
+            padding: 4px;
+            font-family: georgia; 
+            color: white;
+        }
+        .logo{
+            position: relative;
+            bottom: 975px;
+            left: 10px;
+        }
+        .lona{
+            position: relative;
+            bottom: 1200px;
+            left: 175px;
+            font-size: 50px;
+        }
+        form {
+            background-color: rgba(255, 253, 253, 0.337);
+            width: 490px;
+            height: 425px;
+            border-radius: 20px;
+            border: 2px solid #333;
+            padding: 30px;
+            box-shadow: 3px 3px 10px rgba (0, 0, 0, 0.2);
+            position: relative;
+            bottom: 450px;
+        }
+        tr {
+            font-size: 25px;
+            position: relative;
+            top: 1px;
+        }
+        td {
+            padding-left: 15px;
+            position: relative;
+            bottom: 40px;
+        }
+        input[type="text"],
+        input[type="number"]{
+            width: 112%;
+            padding: 6.5px;
+            margin: 4px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            position: relative;
+            right: 58px;
+        }
+        button {
+            background-color: rgb(200, 24, 83);
+            width: 40%
+        } 
+        input[type=""]{
+            width: 40%;
+            padding: 6.5px;
+            margin: 4px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .religion{
+            width: 72%;
+            left: 243px;
+            bottom: 20px;
+            padding: 6.5px;
+            margin: 4px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            position:relative
+            
+        }
+        .nreligion{
+            position:relative;
+            top: 20px;
+        }
+        .nilogo{
+            position: relative;
+            bottom: 115px;
+            right: 14px;
+        }
+        .age{
+            position: relative;
+            bottom: 100px;
+        }
+        
+        .bgender{
+            width: 72%;
+            left: 243px;
+            bottom:38px;
+            padding: 6.5px;
+            margin: 4px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            position:relative
+        }
+        .bdob{
+            width: 112%;
+            bottom:30px;
+            right: 58px;
+            padding: 6.5px;
+            margin: 4px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            position:relative
+        }
+        .ndob{
+            position: relative;
+            bottom: 28px;
+        }
+        .btongue{
+            width: 72%;
+            left: 243px;
+            bottom:50px;
+            padding: 6.9px;
+            margin: 4px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            position:relative
+        }
+        .ntongue{
+            position: relative;
+            bottom: 15px;
+        }
+        .baddress{
+            position: relative;
+            bottom: 40px;
+        }
+        .naddress{
+            position: relative;
+            bottom: 40px;
+        }
+        .bcity{
+            width: 60%;
+            right: 210px;
+            bottom:23px;
+            padding: 6.9px;
+            margin: 4px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            position:relative
+        }
+        .ncity{
+            position: relative;
+            bottom: 23px;
+        }
+        .bstate{
+            width: 50%;
+            left: 270px;
+            bottom:69px;
+            padding: 6.9px;
+            margin: 4px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            position:relative
+        }
+        .nstate{
+            position: relative;
+            left: 250px;
+            bottom: 65px;
+        }
+        .next{
+            position: relative;
+            top: 400px;
+            padding: 6px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        .nextpage{
+            text-decoration: none;
+            color: inherit;
+        }
+        .nextpage:hover{
+            background-color: transparent;
+            color: inherit;
+            cursor: default;
+            box-shadow: none;
+        }
+        .quotes{
+            position: relative;
+            top: 40px;
+        }
+        .con{
+            position: relative;
+            bottom: 20px;
+            left: 30px;
+        }
+        .thrule{
+            position: relative;
+            bottom: 25px;
+        }
+        button{
+            position: relative;
+            z-index: 10;
+        }
+        .wid{
+            position: relative;
+            bottom: 45px;
+            left: 30px;
+        }
+       .fuo{
+        position: relative;
+        top: 70px;
+        right: 20px;
+       }
+       .fa-facebook{
+        font-size: 33px;
+        color:rgb(0, 64, 255);
+       }
+       .fa-twitter{
+        font-size: 33px;
+        color: rgb(0, 55, 255);
+       }
+       .fa-square-instagram{
+        font-size: 33px;
+        color:rgb(255, 34, 0);
+       }
+       .fa-whatsapp{
+        font-size: 33px;
+        color: rgb(3, 81, 3);
+       }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="contact">
+        <span><i class="fa-solid fa-phone"></i> 044-2348905670</span>
+        <span class="mail"><i class="fa-solid fa-envelope"></i> fmpartner@yahoo.com</span>
+    </div>
+    <div>
+        <nav>
+            <ol>
+                <li><a href="file:///C:/Users/Hp/Desktop/find%20my%20partner%20pro/sandhiya.html?name=&email=&password=&confirm+password=&contact+no=&otp=#" class="navbread">Home</a></li>
+                <li><a href="about.html" class="navbread">About Us </a></li>
+                <li><a href="service.html" class="navbread">Service</a> </li>
+                <li><a href="#" class="navbread">Testimonials </a> </li>
+                <li><a href="help.html" class="navbread"><i class="fas fa-question-circle"></i>Help</a></li>
+            </ol>
+        </nav>
+    </div>
+    </header>
+    <br>
+    <ul role="list" class="quotes">
+        <li><i class='fas fa-user-plus'></i> The Bride Must Be At Least 18 Years Old</li><br>
+        <li><i class="fa fa-file-text"></i> You Must Agree To The Website Terms And </li><br><li class="con">Conditions Before Registering</li><br>
+        <li class="thrule"><i class="fas fa-user-check"></i> You Should Be Unmarried, Legally Divorced,</li><br> <li class="wid">Or Widowed</li><br>
+        <li class="fuo">Follow Us On: <i class="fa-brands fa-whatsapp"></i>
+             <i class="fa-brands fa-facebook"></i>
+             <i class="fa-brands fa-twitter"></i>
+             <i class="fa-brands fa-square-instagram"></i>
+            </li><br>
+    </ul>
+    <center>
+        <div class="fullform">    
+            <form>
+                <table>
+                  <tr class="age">
+                        <td><label for="age" >Age</label></td>
+                        <td> <input type="number" id="age" name="Age" required> </td>
+                    </tr>
+                    <tr class="nbrel">
+                        <td><label for="religion" class="nreligion">Religion</label>
+                            <select id="religion"  class="religion">
+                              <option>---Select---</option>
+                              <option>Christian</option>
+                              <option>Muslim</option>
+                              <option>Hindu</option>
+                              <option>Buddhist</option>
+                              <option>Islam</option>
+                              <option>Folk/Traditional </option>
+                              <option>Sikhism</option>
+                              <option>Judaism</option>
+                              <option>Jainism</option>
+                              <option>Bahá'í Faith</option>
+                              <option>Shinto</option>
+                              <option>Taoism</option>
+                              <option>Zoroastrianism</option>
+                              <option>Rastafarianism</option>
+                              <option>Other</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender" class="ngender">Gender</label>
+                            <select name="gender" id="gender" class="bgender">
+                              <option value="select">---Select---</option>
+                              <option value="female">Female</option>
+                              <option value="male">Male</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob" class="ndob">Date of Birth</label></td>
+                        <td> <input type="date" id="dob" class="bdob"> </td>
+                    </tr>
+                    <tr class="tongue">
+                        <td><label for="tongue" class="ntongue">Mother Tongue</label>
+                            <select id="religion"  class="btongue">
+                              <option>---Select---</option>
+                              <option>Tamil</option>
+                              <option>English</option>
+                              <option>Hindi</option>
+                              <option>Telugu</option>
+                              <option>Mandarin</option>
+                              <option>Spanish</option>
+                              <option>French</option>
+                              <option>Korean</option>
+                              <option>Arabic</option>
+                              <option>Bengali</option>
+                              <option>Russian</option>
+                              <option>Portuguese</option>
+                              <option>Japanese</option>
+                              <option>Urdu</option>
+                              <option>Indonesian</option>
+                              <option>Yue Chinese (Cantonese)</option>
+                              <option>Chinese</option>
+                              <option>Other</option>
+                            </select></td>
+                    </tr>
+                    <tr class="address">
+                        <td><label for="address" class="naddress">Address</label></td>
+                        <td><input type="text" id="address"class="baddress"></td>  
+                    </tr>
+                </tr>
+                <tr>
+                    <td><label for="city" class="ncity">City</label></td>
+                    <td><input type="address"id="city"class="bcity"></td>  
+                </tr>
+                    <tr class="state">
+                        <td><label for="state" class="nstate">State</label>
+                         <select id="state" class="bstate">
+                            <option>---Select---</option>
+                            <option>Tamil Nadu</option>
+                            <option>Rajasthan</option>
+                            <option>Karnataka</option>
+                            <option>Andhra Pradesh</option>
+                            <option>Maharashtra</option>
+                            <option>California</option>
+                            <option>New York</option>
+                            <option>Hawaii</option>
+                            <option>Washington</option>                          
+                            <option>Busan</option>
+                            <option>Gyeongsangnam Do</option>
+                            <option>Jeju</option>
+                            <option>Seoul</option>
+                            <option>Florida</option>
+                            <option>Primorsky Krai</option>
+                            <option>Chechnya</option>
+                            <option>Ingushetia</option>
+                            <option>Arkhangelsk Oblast</option>
+                            <option>Aomori</option>
+                            <option>Kagoshima</option>
+                            <option>Tokyo</option>
+                            <option>Yamanashi</option>
+                            <option>Bangkok</option>
+                            <option>Phuket</option>
+                            <option>Chiang Mai</option>
+                            <option>Cebu</option>
+                            <option>Laguna</option>
+                            <option>Batangas</option>
+                            <option>Agusan Del Norte</option>
+                            <option>Davao Del Sur</option>
+                            <option>Other</option>
+                        </select></td>
+                    </tr></div>
+                    <a href="log3.html" class="nextpage">
+                    <button type="button" class="next"><em class="bname">Next...</em></button>
+                </a>
+        </table>
+    </form>
+        </div>
+    </center>
+    <div class="nilogo">
+    <img src="logo_crop-removebg-preview.png" alt="Web logo"width="200px" class="logo">
+    <p class="lona"><em>Find My Partner</em></p></div>
+</body>
+</html>

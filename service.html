@@ -1,0 +1,172 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="All tags">
+    <title> Find My Partner</title>
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="sandhiya.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    overscroll-behavior: none;
+    overflow-x: hidden;
+}
+header {
+    padding: 10px 0;6
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 250px;
+    font-size: 30px;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    bottom: 260px;
+}
+
+.service {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 calc(45% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+span{
+    position: relative;
+    right: 510px;
+    bottom: 5px;
+    font-size: 25px;
+}
+form {
+    display: flex; 
+    position: relative;
+    bottom: 190px;
+    left: 40%;
+    flex-direction: column;
+}
+form label {
+    margin: 10px 0 5px;
+    font-size: 25px;
+}
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 25%;
+}
+button{
+    width: 25%;
+}
+img {
+    position: relative;
+    bottom: 68px;
+    right: 643px;
+    }
+.lona{
+    position: relative;
+    right: 410px;
+    bottom: 245px;
+    font-size: 50px;
+    }
+form button {
+    padding: 10px;
+    background-color: rgb(200, 24, 83);
+    color: white;
+    border: none;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="contact">
+            <span><i class="fa-solid fa-phone"></i> 044-2348905670</span>
+            <span class="mail"><i class="fa-solid fa-envelope"></i> fmpartner@yahoo.com</span>
+        </div>
+        <div>
+            <nav>
+                <ol>
+                    <li><a href="file:///C:/Users/Hp/Desktop/find%20my%20partner%20pro/sandhiya.html?name=&email=&password=&confirm+password=&contact+no=&otp=#" class="navbread">Home</a></li>
+                    <li><a href="about.html" class="navbread">About Us </a></li>
+                    <li><a href="service.html" class="navbread">Service</a> </li>
+                    <li><a href="#" class="navbread">Testimonials </a> </li>
+                    <li><a href="help.html" class="navbread"><i class="fas fa-question-circle"></i>Help</a></li>
+                </ol>
+            </nav>
+            <img src="logo_crop-removebg-preview.png" alt="Web logo"width="200px">
+    <p class="lona"><em>Find My Partner</em></p>
+        </div>
+        </header>
+        <br>
+    <main>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-container">
+                <div class="service">
+                    <h3>Personalized Matchmaking</h3>
+                    <p>We offer personalized matchmaking services to help you find your perfect partner.</p>
+                </div>
+                <div class="service">
+                    <h3>Profile Verification</h3>
+                    <p>All profiles are verified to ensure authenticity and safety for our users.</p>
+                </div>
+                <div class="service">
+                    <h3>24/7 Customer Support</h3>
+                    <p>Our dedicated support team is available 24/7 to assist you with any queries.</p>
+                </div>
+                <div class="service">
+                    <h3>Success Stories</h3>
+                    <p>Read inspiring success stories from couples who found love through our platform.</p>
+                </div>
+            </div>
+        </section>
+            <form>
+               <tr><td> <label for="name">Name:</label></td>
+               <td><input type="text" id="name" name="name" required></td></tr>
+                
+               <tr><td> <label for="email">Email:</label></td>
+               <td><input type="email" id="email" name="email" required></td></tr>
+                
+               <tr><td><label for="message">Message:</label></td>
+               <td> <textarea id="message" name="message" required></textarea></td></tr>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

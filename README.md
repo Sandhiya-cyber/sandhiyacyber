@@ -1,2 +1,0 @@
-# sandhiyacyber
-my data

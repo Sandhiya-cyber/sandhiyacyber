@@ -4,9 +4,6 @@ body {
     background-position: cover;
     position: static;   
 }
-html, body{
-    overflow: hidden;
-}
 div{
     font-size: 24px;
     margin-left: 20px;
@@ -52,3 +49,20 @@ li{
     font-size: 25px;
     left: 50px;
 }
+.fa-facebook{
+    font-size: 33px;
+    color:rgb(0, 64, 255);
+   }
+   .fa-twitter{
+    font-size: 33px;
+    color: rgb(0, 55, 255);
+   }
+   .fa-square-instagram{
+    font-size: 33px;
+    color:rgb(255, 34, 0);
+   }
+   .fa-whatsapp{
+    font-size: 33px;
+    color: rgb(3, 81, 3);
+
+   }

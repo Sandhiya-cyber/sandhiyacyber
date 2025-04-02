@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="sandhiya.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        html, body{
+    overflow: hidden;
+}
         .mail{
             padding: 20px;
         }
@@ -68,6 +71,9 @@
             color: white;
             font-size: 20px;
         }
+        button {
+            background-color: rgb(200, 24, 83);
+            width: 40%}
         form {
             background-color: rgba(255, 253, 253, 0.337);
             width: 490px;
@@ -99,21 +105,28 @@
             margin: 4px;
             border: 1px solid #ccc;
             border-radius: 5px;
-        }
-        button {
-            background-color: rgb(200, 24, 83);
-            width: 40%
         } 
-        input[type="number"]{
+        #otp{
             width: 40%;
             padding: 6.5px;
             margin: 4px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
+        .nextpage{
+            text-decoration: none;
+            color: inherit;
+        }
+        .nextpage:hover{
+            background-color: transparent;
+            color: inherit;
+            cursor: default;
+            box-shadow: none;
+        }
     </style>
 </head>
 <body>
+    <header>
     <div class="contact">
         <span><i class="fa-solid fa-phone"></i> 044-2348905670</span>
         <span class="mail"><i class="fa-solid fa-envelope"></i> fmpartner@yahoo.com</span>
@@ -122,13 +135,14 @@
         <nav>
             <ol>
                 <li><a href="file:///C:/Users/Hp/Desktop/find%20my%20partner%20pro/sandhiya.html?name=&email=&password=&confirm+password=&contact+no=&otp=#" class="navbread">Home</a></li>
-                <li><a href="#" class="navbread">About Us </a></li>
-                <li><a href="#" class="navbread">Service</a> </li>
+                <li><a href="about.html" class="navbread">About Us </a></li>
+                <li><a href="service.html" class="navbread">Service</a> </li>
                 <li><a href="#" class="navbread">Testimonials </a> </li>
-                <li><a href="#" class="navbread"><i class="fas fa-question-circle"></i>Help</a></li>
+                <li><a href="help.html" class="navbread"><i class="fas fa-question-circle"></i>Help</a></li>
             </ol>
         </nav>
     </div>
+    </header>
     <br>
     <ul role="list">
         <li><i class='fas fa-lock'></i> Trusted Matrimony</li><br>
@@ -137,8 +151,87 @@
         <li><i class="fa-sharp fa-solid fa-group-arrows-rotate"></i> Profiles For All Community</li><br>
         <li><i class='fas fa-user-shield'></i> View Verified Profiles And Photos Of Your Profiles</li><br>
         <li><i class='fas fa-shield-alt'></i> Secure In App Chat</li><br>
-        <li><i class='fas fa-map-marker-alt'></i> Select Profiles In YOur Favourite Location</li><br>
+        <li><i class='fas fa-map-marker-alt'></i> Select Profiles In Your Favourite Location</li><br>
     </ul>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () { 
+            const form = document.querySelector("form"); 
+            const nameInput = document.getElementById("name");
+            const emailInput = document.getElementById("email"); 
+            const passwordInput = document.getElementById("password"); 
+            const confirmPasswordInput = document.getElementById("confirm_password"); 
+            const contactInput = document.getElementById("contact");
+            const otpInput = document.getElementById("otp"); 
+            const otpButton = document.querySelector(".botp"); 
+            const submitButton = document.querySelector(".bname");
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
+
+function validateContact(contact) {
+    return /^[0-9]{10}$/.test(contact);
+}
+
+function validateForm(event) {
+    if (nameInput.value.trim() === "") {
+        alert("Please enter your name.");
+        event.preventDefault();
+        return false;
+    }
+    if (!validateEmail(emailInput.value)) {
+        alert("Please enter a valid email.");
+        event.preventDefault();
+        return false;
+    }
+    if (passwordInput.value.trim() === "") {
+        alert("Please enter a password.");
+        event.preventDefault();
+        return false;
+    }
+    if (passwordInput.value.length < 6) {
+        alert("Password must be at least 6 characters long.");
+        event.preventDefault();
+        return false;
+    }
+    if (confirmPasswordInput.value.trim() === "") {
+        alert("Please confirm your password.");
+        event.preventDefault();
+        return false;
+    }
+    if (passwordInput.value !== confirmPasswordInput.value) {
+        alert("Passwords do not match. Please confirm your password correctly.");
+        event.preventDefault();
+        return false;
+    }
+    if (!validateContact(contactInput.value)) {
+        alert("Please enter a valid 10-digit contact number.");
+        event.preventDefault();
+        return false;
+    }
+    if (otpInput.value.trim() === "") {
+        alert("Please enter the OTP.");
+        event.preventDefault();
+        return false;
+    }
+    return true;
+}
+
+otpButton.addEventListener("click", function () {
+    const otp = Math.floor(100000 + Math.random() * 900000);
+    alert("Your OTP is: " + otp);
+    otpInput.value = otp;
+});
+
+submitButton.addEventListener("click", function (event) {
+    if (!validateForm(event)) {
+        return;
+    }
+    alert("Form submitted successfully!");
+});
+
+});
+    </script>
     <center>
         <div class="fullform">    
             <form>
@@ -146,7 +239,7 @@
                 <table>
                   <tr>
                         <td><label for="name">Name</label></td>
-                        <td> <input type="text" id="name" name="name"> </td>
+                        <td> <input type="text" id="name" > </td>
                     </tr>
                     <tr>
                         <td><label for="email">Email</label></td>
@@ -167,8 +260,10 @@
                     </tr>
                     <tr>
                         <td><label for="otp">OTP</label></td>
-                        <td><input class="otp" type="number" id="otp" name="otp"> <button type="button"  class="botp"> Get OTP</button></td> 
-                        <button type="submit" class="get"><em class="bname">Get Started...</em></button> 
+                        <td><input class="otp" type="tel" id="otp" name="otp"> <button type="button"  class="botp"> Get OTP</button></td>  
+                        <a href="log2.html" class="nextpage">
+                            <button type="button" class="get"><em class="bname">Get Started...</em></button>
+                        </a>
                     </tr>
         </table>
     </form>
@@ -177,7 +272,11 @@
     <img src="logo_crop-removebg-preview.png" alt="Web logo"width="200px">
     <p class="lona"><em>Find My Partner</em></p>
     <p class="check">Already You Are a Member?</p>
-    <button type="button" class="login"><i class="fa-solid fa-user"></i> <em> Login In</em></button>
-    <p class="follow">Follow Us On:</p>
+   <button type="button" class="login"><i class="fa-solid fa-user"></i> <em> Login In</em></button>
+    <p class="follow">Follow Us On: 
+         <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-square-instagram"></i></p>
 </body>
 </html>
